@@ -459,13 +459,86 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+
+    <!-- Backdrop-Modal -->
+    <div class="backdrop" data-modal>
       <div class="modal modal-hidden">
         <button class="button-close-window" type="button" data-modal-close>
           <svg width="30" height="30">
             <use href="./images/modal-defs.svg#icon-close"></use>
           </svg>
         </button>
+
+    <!-- Form  -->
+      <div class="modal-inner">
+        
+        <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+        
+        <form class="form-recall" name="recall" autocomplete="on">
+          <div class="form-field">
+            <label class="form-field-label" for="user-name">Имя</label>
+            <div class="form-field-wrapper">
+              <input class="form-field-input" id="user-name" type="text" name="user-name" autofocus>
+            <svg class="form-field-icon" width="18px" height="18px">
+              <use href="./images/symbol-defs.svg#icon-man"></use>
+            </svg>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label class="form-field-label" for="user-tel">Телефон</label>
+            <div class="form-field-wrapper">
+              <input class="form-field-input" id="user-tel" type="tel" name="user-tel">
+            <svg class="form-field-icon" width="18px" height="18px">
+              <use href="./images/symbol-defs.svg#icon-tel-form"></use>
+            </svg>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label class="form-field-label" for="user-email">Почта</label>
+            <div class="form-field-wrapper">
+              <input class="form-field-input" id="user-email" type="email" name="user-email">
+            <svg class="form-field-icon" width="18px" height="18px">
+              <use href="./images/symbol-defs.svg#icon-mail-form"></use>
+            </svg>
+            </div>
+          </div>
+          <div class="form-field">
+            <label class="form-field-label" for="user-comment">Комментарий</label>
+            <textarea class="form-field-input user-comment" name="user-comment" id="user-comment" rows="10" placeholder="Введите текст"></textarea>
+          </div>
+
+          <div class="terms-conditions">
+            <div class="term-conditions-wrapper">
+              <input class="terms-conditions-input" type="checkbox" id="terms-conditions" name="terms-conditions">
+            <label class="terms-conditions-label" for="terms-conditions">Соглашаюсь с рассылкой и принимаю <a class="terms-acent" href="#">Условия договора</a></label>
+            </div>
+            <button class="form-recall-button" type="submit">Отправить</button>
+          </div>
+          
+          
+
+        </form>
+
+      </div>
+
+
+        
+        
+
+
+
+
+
+
+
+
+
+
+          
+        
+
       </div>
     </div>
 
