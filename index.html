@@ -543,15 +543,22 @@
               ></textarea>
             </div>
 
-            <div class="terms-wrapper">
-              <label class="terms-label">
-                <input class="terms-checkbox" type="checkbox" name="terms" id="terms" />
-                <span class="icon-checkbox"></span>
-                <span class="policy-text">Соглашаюсь с рассылкой и принимаю</span>
-                <a class="policy-link" href="#">Условия договора</a>
+            <div class="check-wrapper">
+              <label>
+                <input class="check-input" type="checkbox" />
+                <svg class="check-icon" width="16" height="15">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+                <svg class="check-icon-complete" width="16" height="15">
+                  <use href="./images/icons.svg#icon-check-complete"></use>
+                </svg>
+                <p class="check-privacy-text">
+                  Соглашаюсь с рассылкой и принимаю
+                  <a class="policy-link" href="#">Условия договора</a>
+                </p>
               </label>
-              <button class="form-recall-button" type="submit">Отправить</button>
             </div>
+            <button class="form-recall-button" type="submit">Отправить</button>
           </form>
         </div>
       </div>
