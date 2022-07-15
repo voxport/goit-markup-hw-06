@@ -690,6 +690,57 @@ address {
   fill: var(--primary-white-color);
 }
 
+.footer-social-block {
+  margin-right: 93px;
+}
+
+
+
+
+
+
+
+
+.footer-subscribe-wrapper {
+  display: flex;
+  position: relative;
+}
+
+.footer-subscribe-input {
+  padding: 15px 16px;
+  width: 358px;
+  color: rgba(255, 255, 255, 0.6);
+  background: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  margin-right: 12px;
+}
+
+.footer-subscribe-button {
+  padding: 10px 62px 10px 29px;
+  width: 200px;
+  background: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.subscribe-icon {
+fill: #ffffff;
+position: absolute;
+top: 50%;
+right: 28px;
+transform: translateY(-50%);
+}
+
+
 /* modal  */
 .backdrop {
   position: fixed;
@@ -727,7 +778,6 @@ address {
   cursor: pointer;
 }
 
-
 .modal-inner {
   padding: 40px;
 }
@@ -740,10 +790,6 @@ line-height: 1.15;
 text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
-}
-
-.form-recall {
-
 }
 
 .form-field {
@@ -766,7 +812,6 @@ position: relative;
   padding: 12px 12px 12px 42px;
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
 }
 
 .user-comment {
@@ -782,42 +827,43 @@ position: relative;
  transform: translateY(-50%);
 }
 
-.terms-conditions {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-  
+.terms-wrapper {
+ 
 }
 
-.term-conditions-wrapper {
+.terms-label {
+  display: flex;
+  justify-content: center;
   margin-bottom: 30px;
 }
 
-.terms-conditions-label {
-  line-height: 1.71;
+.terms-checkbox {
+  /* appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: absolute; */
 }
 
-.terms-conditions-input {
-}
 
-.terms-acent {
+.terms-link {
   color: var(--aceent-color);
   text-decoration: underline;
 }
 
 .form-recall-button {
+  display: block;
+  margin: 0 auto;
   padding: 10px 56px;
   background: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
   color: #ffffff;
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+  cursor: pointer;
 }
 
 .is-hidden {
