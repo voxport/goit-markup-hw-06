@@ -297,9 +297,9 @@
             </li>
           </ul>
         </div>
-
-        <div>
-          <h2 class="footer-social-action">присоединяйтесь</h2>
+        <!-- Social block item  -->
+        <div class="footer-social-block">
+          <h2 class="subscribe-email">присоединяйтесь</h2>
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a class="footer-social-link" href="#">
@@ -333,6 +333,29 @@
               </a>
             </li>
           </ul>
+        </div>
+
+        <!-- Subscribe block  -->
+        <div>
+          <!-- <h2 class="footer-social-action">Подпишитесь на рассылку</h2> -->
+          <div class="footer-subscribe-wrapper">
+            <form class="footer-subscribe-form" name="subscribe">
+              <label class="subscribe-email" for="subscribe-email">Подпишитесь на рассылку</label>
+              <input
+                class="footer-subscribe-input"
+                type="email"
+                name="subscribe-email"
+                id="subscribe-email"
+                placeholder="E-mail"
+              />
+            </form>
+            <button class="footer-subscribe-button" type="submit">
+              Подписаться
+              <svg class="subscribe-icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-subscribe"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </footer>

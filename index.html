@@ -132,13 +132,13 @@
           <h2 class="work-title">Чем мы занимаемся</h2>
           <ul class="work-list">
             <li class="work-img">
-              <img
-                src="./images/index-photo/img.jpg"
-                alt="мы делаем сайты"
-                width="370"
-                height="294"
-              />
               <div class="work-description">
+                <img
+                  src="./images/index-photo/img.jpg"
+                  alt="мы делаем сайты"
+                  width="370"
+                  height="294"
+                />
                 <h3 class="work-description-title">Десктопные приложения</h3>
               </div>
             </li>
@@ -422,7 +422,7 @@
         </div>
         <!-- Social block item  -->
         <div class="footer-social-block">
-          <h2 class="footer-social-action">присоединяйтесь</h2>
+          <h2 class="subscribe-email">присоединяйтесь</h2>
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a class="footer-social-link" href="#">
@@ -460,10 +460,10 @@
 
         <!-- Subscribe block  -->
         <div>
-          <h2 class="footer-social-action">Подпишитесь на рассылку</h2>
+          <!-- <h2 class="footer-social-action">Подпишитесь на рассылку</h2> -->
           <div class="footer-subscribe-wrapper">
             <form class="footer-subscribe-form" name="subscribe">
-              <label class="subscribe-email" for="subscribe-email"></label>
+              <label class="subscribe-email" for="subscribe-email">Подпишитесь на рассылку</label>
               <input
                 class="footer-subscribe-input"
                 type="email"
@@ -472,17 +472,19 @@
                 placeholder="E-mail"
               />
             </form>
-            <button class="footer-subscribe-button" type="submit">Подписаться</button>
-            <svg class="subscribe-icon" width="24px" height="24px">
-              <use href="./images/icons.svg#icon-subscribe"></use>
-            </svg>
+            <button class="footer-subscribe-button" type="submit">
+              Подписаться
+              <svg class="subscribe-icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-subscribe"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
     </footer>
 
     <!-- Backdrop-Modal -->
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal modal-hidden">
         <button class="button-close-window" type="button" data-modal-close>
           <svg width="30" height="30">
@@ -505,7 +507,7 @@
                   name="user-name"
                   autofocus
                 />
-                <svg class="form-field-icon" width="18px" height="18px">
+                <svg class="form-field-icon" width="12" height="12">
                   <use href="./images/icons.svg#icon-man"></use>
                 </svg>
               </div>
@@ -515,7 +517,7 @@
               <label class="form-field-label" for="user-tel">Телефон</label>
               <div class="form-field-wrapper">
                 <input class="form-field-input" id="user-tel" type="tel" name="user-tel" />
-                <svg class="form-field-icon" width="18px" height="18px">
+                <svg class="form-field-icon" width="13" height="13">
                   <use href="./images/icons.svg#icon-tel-form"></use>
                 </svg>
               </div>
@@ -525,15 +527,15 @@
               <label class="form-field-label" for="user-email">Почта</label>
               <div class="form-field-wrapper">
                 <input class="form-field-input" id="user-email" type="email" name="user-email" />
-                <svg class="form-field-icon" width="18px" height="18px">
+                <svg class="form-field-icon" width="15" height="12">
                   <use href="./images/icons.svg#icon-mail-form"></use>
                 </svg>
               </div>
             </div>
-            <div class="form-field">
+            <div class="form-field-comment">
               <label class="form-field-label" for="user-comment">Комментарий</label>
               <textarea
-                class="form-field-input user-comment"
+                class="comment-input"
                 name="user-comment"
                 id="user-comment"
                 rows="10"
@@ -543,8 +545,10 @@
 
             <div class="terms-wrapper">
               <label class="terms-label">
-                <input class="terms-checkbox" type="checkbox" name="terms" id="terms" />Соглашаюсь с
-                рассылкой и принимаю&nbsp<a class="terms-link" href="#">Условия договора</a>
+                <input class="terms-checkbox" type="checkbox" name="terms" id="terms" />
+                <span class="icon-checkbox"></span>
+                <span class="policy-text">Соглашаюсь с рассылкой и принимаю</span>
+                <a class="policy-link" href="#">Условия договора</a>
               </label>
               <button class="form-recall-button" type="submit">Отправить</button>
             </div>
