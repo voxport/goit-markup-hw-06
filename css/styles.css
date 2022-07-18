@@ -873,14 +873,14 @@ color: rgba(117, 117, 117, 0.5);
 }
 
 .check-wrapper {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 30px;
+  gap: 8px;
 }
 
 .check-input {
-  position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -892,27 +892,20 @@ color: rgba(117, 117, 117, 0.5);
   overflow: hidden;
 }
 
-.check-icon {
-  position: absolute;
-}
-
-.check-input:checked + .check-icon {
-  visibility: hidden;
-}
-
 .check-icon-complete {
-  position: absolute;
-  visibility: hidden;
+  fill: none;
+  border: 2px #212121 solid;
+  border-radius: 2px;
 }
 
 .check-input:checked ~ .check-icon-complete {
-  visibility: visible;
+  fill: var(--aceent-color);
+  border: none;
 }
 
 .check-privacy-text {
+  display: block;
   line-height: 1.17;
-  padding-left: 30px;
-  margin-bottom: 30px;
 }
 
 .form-recall-button {
